@@ -23,6 +23,7 @@
     "koa-views": "^5.2.1"
   },
   "devDependencies": {
+    "babel-register": "^6.24.1",
     "nodemon": "^1.8.1"
   }
 }
