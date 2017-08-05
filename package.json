@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
     "babel-register": "^6.24.1",
     "nodemon": "^1.8.1"
   }
