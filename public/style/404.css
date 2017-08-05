@@ -1,0 +1,35 @@
+header {
+  height: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+header #logo {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  margin-left: 2rem;
+}
+header #logo img {
+  vertical-align: middle;
+  border: 0;
+  width: 120px;
+}
+
+main {
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.ild-button {
+  border: 0;
+  background: none;
+  border-radius: 4px;
+  padding: .5rem 1rem;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12), 0px 2px 2px 0px rgba(0,0,0,0.24);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.ild-button:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.12), 0px 8px 8px 0px rgba(0,0,0,0.24);
+}

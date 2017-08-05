@@ -1,0 +1,26 @@
+<section class="previewer">
+    <!--标题-->
+    <div class="title"><%= article.title %></div>
+    <!--时间-->
+    <div class="timestamp">
+      <span class="date"><%= new Date(article.createdAt).toLocaleString() %></span>
+      <span class="username"><%= article.author %></span>
+      <span class="read-info">阅读 0</span>
+    </div>
+    <!--正文部分-->
+   <% article.content.paragraphs.forEach(function(item) { %>
+      <% item.elements.forEach(function(element) { %>
+        <% switch (element.tag) { 
+           case "p": %>
+            <p class="text"><%= element.text %></p>
+            <% break 
+             case "img": %>
+            <img class="pic" src="<%= element.src %>"/>
+            <% break
+            case "a": %>
+            <a class="text" href="<%= element.url %>"><%= element.text %></a>
+            <% break %>
+        <% } %>
+      <% }) %>
+    <%})%>
+  </section>
