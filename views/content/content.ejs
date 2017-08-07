@@ -15,7 +15,8 @@
             <p class="text"><%= element.text %></p>
             <% break 
              case "img": %>
-            <img class="pic" src="<%= element.src %>"/>
+             <% var src = /^\/media\/origin/.test(element.src) ? 'https://app.ilifediary.com' + element.src : element.src %>
+            <img class="pic" src="<%= src %>"/>
             <% break
             case "a": %>
             <a class="text" href="<%= element.url %>"><%= element.text %></a>
