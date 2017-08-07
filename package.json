@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nodemon bin/www",
     "dev": "./node_modules/.bin/nodemon bin/www",
-    "prd": "pm2 start bin/www"
+    "prd": "pm2 start bin/www",
+    "sync:style": "qshell qupload 4 bin/sync-style.json"
   },
   "dependencies": {
     "axios": "^0.16.2",

@@ -1,0 +1,18 @@
+{
+  "src_dir"            :   "./public/style",
+  "bucket"             :   "ilife",
+  "key_prefix"         :   "static/style/",
+  "ignore_dir"         :   false,
+  "overwrite"          :   true,
+  "check_exists"       :   true,
+  "check_hash"         :   true,
+  "rescan_local"       :   true,
+  "skip_file_prefixes" :   ".git,bin",
+  "skip_path_prefixes" :   "tmp/,temp/",
+  "skip_fixed_strings" :   ".svn,.git,.gitkeep,index.html",
+  "skip_suffixes"      :   ".DS_Store,.exe,.map",
+  "log_level"          :   "info",
+  "log_rotate"         :   1,
+  "log_stdout"         :   false,
+  "file_type"          :   0
+}
