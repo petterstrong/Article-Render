@@ -14,6 +14,16 @@ module.exports = {
           type
           wordCount
           author
+          stat {
+            aid
+            viewC
+            likeC
+            shareC
+            collectionC
+            subscriptionC
+            commentC
+            scoreList
+          }
         }
       }
     `

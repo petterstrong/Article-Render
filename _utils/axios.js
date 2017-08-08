@@ -1,7 +1,5 @@
 const axios = require('axios')
-
-axios.defaults.headers.common['Authorization'] = 'TOKEN b3dc3f1cf78c651d5b63d90d9fbb4a1010a0907e'
-
+// Todo: 当前的所有文章内容为公开，Token 待处理
 axios.interceptors.response.use(
   function (response) {
     let data = response.data || {};
